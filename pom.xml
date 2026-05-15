@@ -5,8 +5,8 @@
          https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.example</groupId>
-    <artifactId>project-name</artifactId>
+    <groupId>io.simulator</groupId>
+    <artifactId>sensor-data-pipeline</artifactId>
     <version>0.1.0</version>
 
     <properties>
@@ -17,6 +17,12 @@
     </properties>
 
     <dependencies>
+
+    <dependency>
+        <groupId>io.babyredis</groupId>
+        <artifactId>baby-redis-client</artifactId>
+        <version>0.3.0</version>
+    </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
