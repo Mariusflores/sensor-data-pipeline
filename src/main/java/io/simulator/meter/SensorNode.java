@@ -22,13 +22,10 @@ public class SensorNode {
         double baseConsumption = profile.baseConsumption;
         double stdDev = baseConsumption * 0.15;
 
-        // Scale down to 15 second interval
+        // Scale down to 15 second interval, bell curved random kWh simulation
         double consumption = (baseConsumption + stdDev * random.nextGaussian()) / 240;
 
-        // Convert to kW instantaneous
-        double load = consumption / (15.0 / 3600.0);  
-
-        return new SensorData(id, System.currentTimeMillis(), consumption, load);
+        return new SensorData(id, System.currentTimeMillis(), consumption);
 
     }
 
