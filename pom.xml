@@ -5,9 +5,18 @@
          https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
     <groupId>io.simulator</groupId>
     <artifactId>sensor-data-pipeline</artifactId>
     <version>0.1.0</version>
+
+    <modules>
+        <module>pipeline-producer</module>
+        <module>pipeline-consumer</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
 
     <properties>
         <java.version>21</java.version>
@@ -17,7 +26,6 @@
     </properties>
 
     <dependencies>
-
     <dependency>
         <groupId>io.babyredis</groupId>
         <artifactId>baby-redis-client</artifactId>
