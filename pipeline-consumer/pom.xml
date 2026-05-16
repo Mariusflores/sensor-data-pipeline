@@ -9,13 +9,14 @@
         <groupId>io.simulator</groupId>
         <artifactId>sensor-data-pipeline</artifactId>
         <version>0.1.0</version>
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>pipeline-consumer</artifactId>
 
 
      <build>
-        <finalName>sensor-data-pipeline</finalName>
+        <finalName>pipeline-consumer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -30,7 +31,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>io.simulator.analytics.Laucher</mainClass>
+                                    <mainClass>io.simulator.analytics.Launcher</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

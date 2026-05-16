@@ -12,6 +12,7 @@
 
     <modules>
         <module>pipeline-producer</module>
+        <module>pipeline-consumer</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -15,7 +15,7 @@
 
 
      <build>
-        <finalName>sensor-data-pipeline</finalName>
+        <finalName>pipeline-producer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
